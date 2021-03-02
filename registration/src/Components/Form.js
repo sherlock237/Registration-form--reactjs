@@ -66,7 +66,7 @@ class Form extends Component {
                     <label>FirstName :</label> <input type="text" value={this.state.firstName} onChange={this.firsthandler} placeholder="FirstName..." required/><br />
                     <label>LastName :</label> <input type="text" value={this.state.lastName} onChange={this.lasthandler} placeholder="LastName..." required/><br />
                     <label>Password :</label> <input type="password" value={this.state.password} onChange={this.passwordhandler} placeholder="Password..." required/><br />
-                    <label>Gender :</label>   <select onChange={this.genderhandler} defaultValue="Select Gender"required>
+                    <label>Gender :</label>&nbsp; &nbsp; <select onChange={this.genderhandler} defaultValue="Gender" style={{width: '380px'}}required >
                         <option value="">Select Gender</option>
                         <option value="male">Male</option>
                         <option value="female">Female</option>
