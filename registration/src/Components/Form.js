@@ -63,10 +63,10 @@ class Form extends Component {
 
                 <form onSubmit={this.handleSubmit}>
                     <h1>User Registration</h1>
-                    <label>FirstName :</label> <input type="text" value={this.state.firstName} onChange={this.firsthandler} placeholder="FirstName..." required/><br />
-                    <label>LastName :</label> <input type="text" value={this.state.lastName} onChange={this.lasthandler} placeholder="LastName..." required/><br />
-                    <label>Password :</label> <input type="password" value={this.state.password} onChange={this.passwordhandler} placeholder="Password..." required/><br />
-                    <label>Gender :</label>&nbsp; &nbsp; <select onChange={this.genderhandler} defaultValue="Gender" style={{width: '380px'}}required >
+                    <label>FirstName :</label> <input type="text" value={this.state.firstName} onChange={this.firsthandler} placeholder="FirstName..." style={{width: 'auto'}} required/><br />
+                    <label>LastName :</label> <input type="text" value={this.state.lastName} onChange={this.lasthandler} placeholder="LastName..." style={{width: 'auto'}} required/><br />
+                    <label>Password :</label> <input type="password" value={this.state.password} onChange={this.passwordhandler} placeholder="Password..." style={{width: 'auto'}} required/><br />
+                    <label>Gender :</label>&nbsp; &nbsp; <select onChange={this.genderhandler} defaultValue="Gender" style={{width: 'auto'}}required >
                         <option value="">Select Gender</option>
                         <option value="male">Male</option>
                         <option value="female">Female</option>
